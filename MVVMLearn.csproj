@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\edit-button.png" />
+    <None Remove="Images\PhonePictures\GalaxyS32.jpg" />
+    <None Remove="Images\PhonePictures\iPhone.jpg" />
+    <None Remove="Images\PhonePictures\Mate50.jpg" />
+    <None Remove="Images\PhonePictures\Xiaomi12TPro.jpg" />
+    <None Remove="Images\plus.png" />
+    <None Remove="Images\remove.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\edit-button.png" />
+    <Resource Include="Images\PhonePictures\GalaxyS32.jpg" />
+    <Resource Include="Images\PhonePictures\iPhone.jpg" />
+    <Resource Include="Images\PhonePictures\Mate50.jpg" />
+    <Resource Include="Images\PhonePictures\Xiaomi12TPro.jpg" />
+    <Resource Include="Images\plus.png" />
+    <Resource Include="Images\remove.png" />
+  </ItemGroup>
+
+</Project>
