@@ -7,6 +7,19 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Подробнее" Background="White">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Margin" Value="20 10 0 100" />
+        </Style>
+        <ControlTemplate x:Key="RoundButton">
+            <Border CornerRadius="25" BorderBrush="Black"
+                    BorderThickness="2" MaxHeight="50" MaxWidth="50"
+                    VerticalAlignment="Top">
+                <Image Source="../Images/backArrow.png" />
+            </Border>
+        </ControlTemplate>
+    </Page.Resources>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,6 +27,9 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="0.3*" />
         </Grid.ColumnDefinitions>
+        <Button Template="{StaticResource RoundButton}"
+                Click="BackArrowButton_Click"/>
+
         <Grid Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />

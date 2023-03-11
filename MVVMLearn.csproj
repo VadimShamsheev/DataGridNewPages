@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\backArrow.png" />
     <None Remove="Images\edit-button.png" />
     <None Remove="Images\PhonePictures\GalaxyS32.jpg" />
     <None Remove="Images\PhonePictures\iPhone.jpg" />
@@ -22,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\backArrow.png" />
     <Resource Include="Images\edit-button.png" />
     <Resource Include="Images\PhonePictures\GalaxyS32.jpg" />
     <Resource Include="Images\PhonePictures\iPhone.jpg" />

@@ -1,4 +1,5 @@
-﻿using MVVMLearn.Models;
+﻿using MVVMLearn.Infrastructure;
+using MVVMLearn.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -28,6 +29,11 @@ namespace MVVMLearn.Views
             companyPageView.Text = _phone.CompanyEntity.Title;
             pricePageView.Text = _phone.Price.ToString();
             imagePageView.Source = new BitmapImage(new Uri(_phone.ImageSource));
+        }
+
+        private void BackArrowButton_Click(object sender, RoutedEventArgs e)
+        {
+            FrameContext.MainWindowFrame.Navigate(null);
         }
     }
 }
